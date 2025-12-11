@@ -1,0 +1,9 @@
+services:
+  reminder-bot:
+    build: .
+    container_name: reminder_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./reminders.db:/app/reminders.db
