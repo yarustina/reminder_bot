@@ -2,10 +2,12 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY . .
+COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY .env ./
+COPY . .
 
-CMD ["python", "reminder_bot.py"]
+ENV TZ=Europe/Moscow
+
+CMD ["python", "uberbot.py"]
