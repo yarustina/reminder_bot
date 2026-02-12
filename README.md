@@ -121,10 +121,10 @@ cd reminder_bot
 ```
 3. Соберите и запустите контейнер:
 ```bash
-docker-compose build
+docker compose build
 ```
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 ---
 ### Готово. Чётко.
